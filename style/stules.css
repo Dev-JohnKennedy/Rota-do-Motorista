@@ -2,9 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 /* Estiliza o corpo da página */
-body {
+ {
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
-    background-color: #DDDDDD; /* Cor de fundo da página */
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
@@ -14,12 +13,24 @@ body {
     padding: 0; /* Remove o padding padrão */
 }
 
+.imagem-de-fundo {
+    text-align: center;
+    margin-top: 9%;
+}
+
 /* Estiliza os títulos h1 */
 h1 {
-    font-size: 2.5rem; /* Tamanho da fonte */
-    color: #222831; /* Cor do texto */
-    text-align: center; /* Alinha o texto ao centro */
-    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+    font-size: 50px;
+    font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
+    color: #293241;
+    display: flex; /* Usa Flexbox para layout */
+    position: absolute; /* Tira o elemento do fluxo normal e permite posicioná-lo manualmente */
+    top: 8%; /* Posiciona o topo do elemento na metade da altura do elemento pai */
+     left: 50%; /* Posiciona o lado esquerdo do elemento na metade da largura do elemento pai */
+    transform: translate(-50%, -50%); /* Centraliza o elemento horizontal e verticalmente */
+    z-index: 1; /* Garante que o texto fique sobre a imagem */
+    padding: 10px; /* Adiciona um espaço interno ao redor do texto */
+
 }
 
 /* Estiliza as seções da página */
@@ -33,13 +44,13 @@ section {
 /* Estiliza os inputs dentro das seções */
 section input {
     width: 30rem; /* Largura dos inputs */
-    border: none; /* Remove a borda padrão */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 1.5rem; /* Borda arredondada */
     margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
     color: #45474B; /* Cor do texto */
     font-size: 1rem; /* Tamanho da fonte */
     box-sizing: border-box; /* Inclui padding e border na largura total */
+    margin-top: -30%;
 }
 
 /* Estiliza os botões dentro das seções */
@@ -103,8 +114,8 @@ section button:hover {
 
 /* Estiliza o rodapé da página */
 footer {
-    background-color: #F5F7F8; /* Cor de fundo do rodapé */
-    color: #45474B; /* Cor do texto */
+    background-color: #293241; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     padding: 0; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
